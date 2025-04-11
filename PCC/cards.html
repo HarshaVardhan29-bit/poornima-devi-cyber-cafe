@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Click Image</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f7f9;
+      background-image: url(https://wallpaperbat.com/img/380623-the-importance-of-cyber-security-in-modern-internet-age.jpg);
+    }
+
+    h2 {
+      text-align: center;
+      padding: 30px 0 10px;
+      color: #333;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      padding: 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .image-card {
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+
+    .image-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .image-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-bottom: 1px solid #eee;
+    }
+
+    .image-caption {
+      padding: 15px;
+      text-align: center;
+      font-size: 16px;
+      color: #555;
+    }
+    .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #141414;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+.logo {
+    font-size: 24px;
+    color: #e50914;
+    font-weight: bold;
+}
+.button-red {
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    align-items: center;
+}
+.hero a {
+    color: #fff;
+    align-items: center;
+}
+.hero {
+    
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+  </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">POORNIMA DEVI CYBER CAFE</div>
+    </header>
+
+  <h2>Click to Access</h2>
+
+  <div class="image-grid">
+    <div class="image-card" onclick="redirectTo('https://www.ikedapl.com/primeikedapl/super')">
+      <img src="https://play-lh.googleusercontent.com/LLqtClBCghPYWAxsrPmlNzbohf0oaukZTW4AYHWbCCJft1bvvDjBIy9vU1Hk8TxC3Sk" alt="Image 1">
+      <div class="image-caption">Ikeda Prime</div>
+    </div>
+
+    <div class="image-card" onclick="redirectTo('https://m.masterpay.pro/')">
+      <img src="https://play-lh.googleusercontent.com/sAV6P2KEuRrZVUIVTpBhwdrUzgmo9DfuLe7fxjwfMbK4xIvp-pf9YFZ46ykoODOfzHdr" alt="Image 2">
+      <div class="image-caption">MasterPay</div>
+    </div>
+
+    <div class="image-card" onclick="redirectTo('page3.html')">
+      <img src="https://via.placeholder.com/300x200?text=Page+3" alt="Image 3">
+      <div class="image-caption">Go to Page 3</div>
+    </div>
+
+    <div class="image-card" onclick="redirectTo('page4.html')">
+      <img src="https://via.placeholder.com/300x200?text=Page+4" alt="Image 4">
+      <div class="image-caption">Go to Page 4</div>
+    </div>
+  </div>
+  <section class="hero" style="align-items: center;">
+    <button class="button-red"><a href="home.html">Home</a></button>
+</section>
+
+  <script>
+    function redirectTo(pageUrl) {
+      window.location.href = pageUrl;
+    }
+  </script>
+
+</body>
+</html>
